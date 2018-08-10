@@ -1,14 +1,14 @@
 <?php
 
-$username = "tuples";
+$db_user = "tuples";
 
-$password = "tuples";
+$db_pass = "tuples";
 
-$hostname = "localhost";
+$db_host = "localhost";
 
 $db_name ="tuples_db";
 
-$con = mysqli_connect("$hostname", "$username", "$password", 'tuples_db');
+$con = mysqli_connect("$db_host", "$db_user", "$db_pass", $db_name);
 if (!$con) {
-    echo " NOt Connected to MySQL<br>";
+    echo "Not Connected to MySQL<br>";
 }
